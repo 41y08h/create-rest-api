@@ -1,0 +1,46 @@
+{
+  "name": "create-rest-api",
+  "version": "0.5.0",
+  "description": "High leve l and opinionated boilerplate for building REST API.",
+  "main": "src/index.ts",
+  "scripts": {
+    "clean": "rimraf dist/*",
+    "build": "tsc",
+    "prestart": "npm run build",
+    "start": "node .",
+    "dev": "nodemon"
+  },
+  "keywords": [
+    "express",
+    "typescript"
+  ],
+  "author": "Piyush",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.2",
+    "@types/debug": "^4.1.5",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.11",
+    "@types/helmet": "^4.0.0",
+    "@types/mongoose": "^5.10.5",
+    "@types/morgan": "^1.9.2",
+    "@types/node": "^15.0.2",
+    "@types/passport": "^1.0.6",
+    "ts-node": "^9.1.1",
+    "tslint": "^6.1.3",
+    "typescript": "^4.2.4"
+  },
+  "dependencies": {
+    "@types/passport-google-oauth2": "^0.1.3",
+    "cookie-parser": "^1.4.5",
+    "debug": "^2.6.9",
+    "dotenv": "^9.0.1",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "ls": "^0.2.1",
+    "mongoose": "^5.12.7",
+    "morgan": "^1.10.0",
+    "passport": "^0.4.1",
+    "passport-google-oauth2": "^0.2.0"
+  }
+}
