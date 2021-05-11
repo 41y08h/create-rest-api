@@ -8,6 +8,6 @@ export default async function connect() {
     useUnifiedTopology: true,
   };
 
-  await mongoose.connect(process.env.MONGO_URI as string, options);
+  await mongoose.connect(process.env.MONGO_URI, options);
   debug("⚡ Database connected");
 }

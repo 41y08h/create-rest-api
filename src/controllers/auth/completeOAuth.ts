@@ -5,5 +5,5 @@ import AuthService from "services/auth";
 
 export default expressAsyncHandler((req: Request, res: Response) => {
   const token = AuthService.serializeUser(req.user as IUser);
-  res.redirect(`${process.env.AUTH_REDIRECT_URL as string}?token=${token}`);
+  res.redirect(`${process.env.AUTH_REDIRECT_URL}?token=${token}`);
 });
