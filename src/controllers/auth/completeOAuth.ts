@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import IUser from "../../interfaces/User";
+import IUser from "../../interfaces/IUser";
 import AuthService from "../../services/auth";
 
 export default function completeOAuth(req: Request, res: Response) {

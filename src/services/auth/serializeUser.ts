@@ -1,4 +1,4 @@
-import IUser from "interfaces/User";
+import IUser from "../interfaces/IUser";
 import jwt from "jsonwebtoken";
 
 export default function serializeUser(user: IUser | undefined) {
