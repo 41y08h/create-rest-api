@@ -1,10 +1,10 @@
 import "dotenv/config";
 import express from "express";
 import createDebug from "debug";
-import router from "./routes";
-import middlewares, { devMiddlewares } from "./middlewares";
-import AuthService from "./services/auth";
-import DatabaseService from "./services/database";
+import middlewares, { devMiddlewares } from "middlewares";
+import AuthService from "services/auth";
+import DatabaseService from "services/database";
+import router from "routes";
 
 const app = express();
 const debug = createDebug("app");
