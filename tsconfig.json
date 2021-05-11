@@ -1,13 +1,9 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6",
     "module": "commonjs",
-    "sourceMap": true,
-    "outDir": "./build",
-    "rootDir": "./src",
-    "removeComments": true,
-    "typeRoots": ["./types", "./node_modules/@types"],
-    "lib": ["es2019"],
+    "outDir": "build",
+    "baseUrl": "./src",
     "strict": true,
     "noImplicitAny": false,
     "strictNullChecks": true,
@@ -16,16 +12,8 @@
     "strictPropertyInitialization": true,
     "noImplicitThis": true,
     "alwaysStrict": true,
-
-    "baseUrl": "./src",
-    "paths": {
-      "*": ["./*"],
-      "@/*": ["./*"]
-    },
     "esModuleInterop": true,
-
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
-  },
-  "include": ["src/**/*"]
+  }
 }

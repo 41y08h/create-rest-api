@@ -1,5 +1,5 @@
 import { Strategy as GoogleStrategy } from "passport-google-oauth2";
-import User from "../../models/User";
+import User from "models/User";
 
 declare var process: {
   env: {
