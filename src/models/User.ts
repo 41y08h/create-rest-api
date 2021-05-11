@@ -8,6 +8,6 @@ const schema = new mongoose.Schema({
   provider: { name: String, accountId: String },
 });
 
-const User: Document<IUser> = mongoose.model("User", schema);
+const User: Model<IUser> = mongoose.model("User", schema);
 
 export default User;

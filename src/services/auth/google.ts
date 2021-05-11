@@ -1,5 +1,3 @@
-import IUser from "interfaces/User";
-import { Document } from "mongoose";
 import { Strategy as GoogleStrategy } from "passport-google-oauth2";
 import User from "../../models/User";
 
@@ -24,12 +22,12 @@ export default new GoogleStrategy(
       "provider.accountId": profile.id,
     };
 
-    const existingUser: Document<IUser> = await User.findOne(query);
+    const existingUser = await User.findOne(query);
 
     // null ~ no error
     if (existingUser) return done(null, existingUser);
 
-    const newUser: Document<IUser> = new User({
+    const newUser = new User({
       name: profile._json.name,
       email: profile._json.email,
       picture: profile._json.picture,

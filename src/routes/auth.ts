@@ -1,5 +1,6 @@
 import { Router } from "express";
 import passport from "passport";
+import AuthController from "../controllers/auth";
 
 const auth = Router();
 
@@ -8,9 +9,7 @@ auth.get(
   passport.authenticate("google", {
     session: false,
   }),
-  (req, res) => {
-    res.status(200).send("OK");
-  }
+  AuthController.completeOAuth
 );
 
 export default auth;
