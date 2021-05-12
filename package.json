@@ -1,14 +1,14 @@
 {
   "name": "create-rest-api",
   "version": "1.0.0",
-  "description": "High leve l and opinionated boilerplate for building REST API.",
+  "description": "High level and opinionated boilerplate for building REST API.",
   "main": "src/index.ts",
   "scripts": {
-    "clean": "rimraf dist/*",
-    "build": "tsc",
-    "prestart": "npm run build",
-    "start": "node .",
-    "dev": "nodemon"
+    "clean": "npx rimraf build/*",
+    "build": "yarn clean && tsc",
+    "prestart": "yarn build",
+    "start": "node build",
+    "dev": "nodemon -r tsconfig-paths/register src/index.ts"
   },
   "keywords": [
     "express",
@@ -27,6 +27,7 @@
     "@types/morgan": "^1.9.2",
     "@types/node": "^15.0.2",
     "@types/passport": "^1.0.6",
+    "rimraf": "^3.0.2",
     "ts-node": "^9.1.1",
     "tsconfig-paths": "^3.9.0",
     "tslint": "^6.1.3",

@@ -1,5 +1,5 @@
 import { Strategy as GoogleStrategy } from "passport-google-oauth2";
-import User from "models/User";
+import User from "@/models/User";
 
 declare var process: {
   env: {
@@ -12,7 +12,7 @@ export default new GoogleStrategy(
   {
     clientID: process.env.GOOGLE_CLIENT_ID,
     clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-    callbackURL: "/auth/google/callback",
+    callbackURL: "@/.*/.*",
     scope: ["email", "profile"],
     proxy: true,
   },
