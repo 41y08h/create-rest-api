@@ -1,6 +1,6 @@
 {
   "name": "create-rest-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "High level and opinionated boilerplate for building REST API.",
   "main": "src/index.ts",
   "scripts": {
