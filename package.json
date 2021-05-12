@@ -8,7 +8,7 @@
     "build": "yarn clean && tsc",
     "prestart": "yarn build",
     "start": "node build",
-    "dev": "nodemon -r tsconfig-paths/register src/index.ts"
+    "dev": "nodemon src/index.ts"
   },
   "keywords": [
     "express",
@@ -27,6 +27,7 @@
     "@types/morgan": "^1.9.2",
     "@types/node": "^15.0.2",
     "@types/passport": "^1.0.6",
+    "@types/passport-google-oauth2": "^0.1.3",
     "rimraf": "^3.0.2",
     "ts-node": "^9.1.1",
     "tsconfig-paths": "^3.9.0",
@@ -34,7 +35,6 @@
     "typescript": "^4.2.4"
   },
   "dependencies": {
-    "@types/passport-google-oauth2": "^0.1.3",
     "cookie-parser": "^1.4.5",
     "debug": "^2.6.9",
     "dotenv": "^9.0.1",
