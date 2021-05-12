@@ -1,6 +1,13 @@
 import { Strategy as GoogleStrategy } from "passport-google-oauth2";
 import User from "models/User";
 
+declare var process: {
+  env: {
+    GOOGLE_CLIENT_ID: string;
+    GOOGLE_CLIENT_SECRET: string;
+  };
+};
+
 export default new GoogleStrategy(
   {
     clientID: process.env.GOOGLE_CLIENT_ID,
