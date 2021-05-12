@@ -1,8 +1,3 @@
-import ProcessEnv from "schemas/ProcessEnv";
-
-const { errors } = ProcessEnv.validate(process.env);
-if (errors) throw new Error(errors);
-
 declare global {
   namespace NodeJS {
     interface ProcessEnv {
